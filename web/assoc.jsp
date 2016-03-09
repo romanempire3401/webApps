@@ -3,6 +3,8 @@
 <%@page import="view.RequestsView"%>
 <%@page language="java" import="dbUtils.DbConn" %>
 
+<%-- this is the new comment --%>
+
 <%
     DbConn dbc = new DbConn();
     String msg = dbc.getErr(); // returns "" if connection is good, else error msg.
