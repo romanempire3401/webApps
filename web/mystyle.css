@@ -1,0 +1,105 @@
+html, body {
+    height:100%; /* so we can make the container div be 100% as high as the browser window, even when there is little content) */
+    margin:0;    /* avoid tiny white border inside browser window */
+    padding:0;   /* avoid tiny white border inside browser window */
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background-color: gray;
+}
+
+#container {
+
+}
+
+#titleNav {
+    z-index:2;       /* added for fixed layout: keeps titleNav on top of other elemements */
+    position:fixed; /* added for fixed layout */
+    top:0px;        /* added for fixed layout */    
+    left:0px;        /* added for fixed layout */
+    width:100%;     /* added for fixed layout */
+    color: white;
+    font-family: serif;
+    background-image: url("pics/music.jpg");
+    height: 79px;
+    min-width: 900px;  /* prevents nav links from wrapping when browser window is too narrow */
+}
+
+#pageTitle {
+    padding-top:10px;
+    padding-left: 10px;
+    padding-right:10px;
+    font-size:45px;
+    font-weight:bold;
+    letter-spacing: 1.5px;
+    text-align:center;
+    float:contour;
+    color: black;
+    font-family: monospace;
+}
+
+#nav {
+    z-index:2;
+    position:fixed; 
+    top:79px;       
+    left:0px;       
+    width:100%;     
+    letter-spacing: 2px;
+    color: orange;
+    font-weight:bold;
+    text-align:center;
+    text-decoration: none;
+    height: 10px;
+    min-width: 800px;
+}
+
+#menu {
+    background-color: black;
+    opacity: 0.8;
+}            
+
+#nav a:hover{
+    text-decoration: none;
+    background-color: blue;
+}
+
+#nav a{
+    text-decoration: none;
+}
+
+#nav a:link{
+    color: green;
+    opacity: 1.0;
+    font-weight: bold;
+}
+
+#nav a:visited{
+    opacity: 1.0;
+    color: green;
+}
+
+.stopFloat {
+    clear:both;
+}
+
+#content {
+    margin-top: 89px;    /* added for fixed layout: prevent content from being hidden under titleNav */
+    margin-bottom: 35px; /* added for fixed layout: prevent content from being hidden under footer */
+    padding:10px;
+}
+
+#footer {
+    z-index:2;       /* added for fixed layout: keeps footer on top of other elemements */
+    width: 100%;     /* added for fixed layout */
+    position:fixed;  /* added for fixed layout */
+    bottom:0px;      /* added for fixed layout */
+    left:0px;        /* added for fixed layout */
+
+    color:black;
+    font-family: monospace;
+    font-weight: bolder;
+    clear:both;
+    text-align:center;
+    padding:10px;
+    font-size:15px;
+    letter-spacing:0.75px;
+    background-image: url("pics/music.jpg");
+}
